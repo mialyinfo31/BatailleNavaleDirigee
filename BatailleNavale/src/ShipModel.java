@@ -5,6 +5,7 @@ public enum ShipModel {
     SOUS_MARRIN(2),
     TORPILLEUR(6);
 
+    /*Attributs*/
     private int size;
 
     /**Constructor**/
@@ -13,13 +14,10 @@ public enum ShipModel {
     }
 
     /**Getter and setter**/
-    // Eviter de mettre le setter afin d'assurer la sécurité
-    public int getSize() {
-        return size;
-    }
+    public int getSize() { return size; }
 
 
     /** NOTES *********************************
-     * ModeleBateau.CONTRE_TORPILLEUR.getSize();
-     * ModeleBateau.values();**/
+     * ModeleBateau.CONTRE_TORPILLEUR.getSize() renvoie la taille;
+     * ModeleBateau.values(); récupère le modèle de bateau**/
 }
